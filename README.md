@@ -25,13 +25,13 @@ This start page is based on the [dawn](https://github.com/b-coimbra/dawn) reposi
 | ------------------------------------------------- | --------------------------- |
 | <kbd>Numrow</kbd> \| <kbd>MouseWheel</kbd> \| <kbd>Click</kbd> | Switch tabs            |
 | <kbd>s</kbd>                           | Search Dialog            |
-| <kbd>q</kbd>                           | Config Dialog (new)           |
 | <kbd>Esc</kbd>                           | Close Dialogs            |
 
 ## ⚙️ Configuration Dialog
-![config-dialog](https://github.com/AllJavi/tartarus-startpage/assets/49349604/3b42c650-b5bb-4a7d-a358-cfa5a8915966)
 
-The default configuration file is [userconfig.js](userconfig.js), but you can change it in the configuration dialog. You can find more information about how the file works in the [original repository](https://github.com/b-coimbra/dawn). The available components are tabs, a clock, and weather.
+The default configuration file is [userconfig.js](userconfig.js). You can find more information about how the file works in the [original repository](https://github.com/b-coimbra/dawn). The available components are tabs, a clock, and weather.
+
+> **Note**: in the original project, it is possible to open the Configuration Dialog via the q hotkey, in my configuration I removed it, because it is not very convenient for me personally.
 
 Additionally, there are two different new options:
 - `fastlink`: To set the link of the Pokeball button.
