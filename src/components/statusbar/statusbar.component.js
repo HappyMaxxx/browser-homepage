@@ -10,6 +10,8 @@ class Statusbar extends Component {
 
   currentTabIndex = 0;
 
+  wheelCooldown = false;
+
   constructor() {
     super();
 
@@ -54,7 +56,7 @@ class Statusbar extends Component {
       }
 
       #tabs ul li:not(:last-child)::after {
-          content: counter(tabs, cjk-ideographic);
+          content: counter(tabs, decimal);
           counter-increment: tabs;
           display: flex;
           width: 100%;
@@ -273,24 +275,29 @@ class Statusbar extends Component {
   }
 
   handleWheelScroll(event) {
-    if (!event) return;
+    if (this.wheelCooldown || !event) return; 
+
+    this.wheelCooldown = true;
+    setTimeout(() => {
+      this.wheelCooldown = false; 
+    }, 300);
 
     let { target, wheelDelta } = event;
 
     if (target.shadow && target.shadow.activeElement) return;
 
-    let activeTab = -1;
+    let activeTab = +1;
     this.refs.tabs.forEach((tab, index) => {
       if (tab.getAttribute("active") === "") {
         activeTab = index;
       }
     });
 
-    if (wheelDelta > 0) {
+    if (wheelDelta < 0) {
       this.activateByKey((activeTab + 1) % (this.refs.tabs.length - 1));
     } else {
       this.activateByKey(
-        (activeTab - 1) < 0 ? this.refs.tabs.length - 2 : activeTab - 1,
+        (activeTab - 1) < 0 ? this.refs.tabs.length - 2 : activeTab - 1
       );
     }
   }

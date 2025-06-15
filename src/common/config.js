@@ -2,7 +2,7 @@ class Config {
   defaults = {
     overrideStorage: false,
     temperature: {
-      location: 'New York',
+      location: 'Vinnytsia',
       scale: 'C'
     },
     clock: {
