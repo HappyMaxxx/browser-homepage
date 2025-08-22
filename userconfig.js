@@ -237,6 +237,12 @@ const default_config = {
               icon_color: "#ea6962",
             },
             {
+              name: "canva",
+              url: "https://www.canva.com/",
+              icon: "letter-c",
+              icon_color: "#3A74DE",
+            },
+            {
               name: "adobe color",
               url: "https://color.adobe.com/es/create/color-wheel",
               icon: "brand-adobe",
@@ -251,13 +257,19 @@ const default_config = {
       background_url: "src/img/banners/cbg-9.gif",
       categories: [
         {
-          name: "mails",
+          name: "stuff",
           links: [
             {
               name: "gmail",
               url: "https://mail.google.com/mail/u/0/",
               icon: "brand-gmail",
               icon_color: "#ea6962",
+            },
+            {
+              name: "linkedin",
+              url: "https://www.linkedin.com/feed/",
+              icon: "brand-linkedin",
+              icon_color: "#7daea3",
             },
           ],
         },
@@ -285,13 +297,25 @@ const default_config = {
           ],
         },
         {
-          name: "stuff",
+          name: "PYTEK",
           links: [
             {
-              name: "linkedin",
-              url: "https://www.linkedin.com/feed/",
-              icon: "brand-linkedin",
-              icon_color: "#7daea3",
+              name: "instagram",
+              url: "https://www.instagram.com/pytekindustries/",
+              icon: "brand-instagram",
+              icon_color: "#E4405F",
+            },
+            {
+              name: "X",
+              url: "https://x.com/PytekIndustries",
+              icon: "brand-twitter", 
+              icon_color: "#000000",
+            },
+            {
+              name: "tiktok",
+              url: "https://www.tiktok.com/@pytekindustries1",
+              icon: "brand-tiktok",
+              icon_color: "#69C9D0",
             },
           ],
         },
