@@ -93,9 +93,15 @@ const default_config = {
         links: [
           {
             name: "uakino",
-            url: "https://uakino.me/",
+            url: "https://uakino.best/",
             icon: "device-tv",
             icon_color: "#7daea3",
+          },
+          {
+            name: "goojara",
+            url: "https://ww1.goojara.to/",
+            icon: "device-cctv",
+            icon_color: "#e57373"
           },
           {
             name: "uafix",
@@ -109,6 +115,18 @@ const default_config = {
             icon: "player-play",
             icon_color: "#e78a4e",
           },
+          {
+            name: "southpark",
+            url: "https://www.southparkstudios.com/",
+            icon: "balloon",
+            icon_color: "#4caf50"
+          },
+          {
+            name: "bb",
+            url: "https://big-bang-online.com/",
+            icon: "atom",
+            icon_color: "#2196f3"
+          }
         ],
       }],
     },
