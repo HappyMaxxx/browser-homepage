@@ -213,6 +213,12 @@ const default_config = {
               icon_color: "#161618",
             },
             {
+              name: "gemini",
+              url: "https://gemini.google.com/app",
+              icon: "sparkles",
+              icon_color: "#4285F4"
+            },
+            {
               name: "easyeda",
               url: "https://easyeda.com/ru",
               icon: "tools",
